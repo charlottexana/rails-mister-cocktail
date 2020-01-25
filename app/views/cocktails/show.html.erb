@@ -1,0 +1,8 @@
+<h1>View Cocktail Details</h1>
+<ul>
+  <li><%= @cocktail.name  %></li>
+  <li><%= @cocktail.ingredients %></li>
+  <li><%= @cocktail.doses %></li>
+</ul>
+
+<%= render "doses/new", cocktail: @cocktail, dose: @dose %>
