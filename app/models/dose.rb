@@ -3,5 +3,4 @@ class Dose < ApplicationRecord
   belongs_to :ingredient
   validates :description, presence: true
   validates_uniqueness_of :ingredient, :scope => :cocktail
-  has_one_attached :photo
 end

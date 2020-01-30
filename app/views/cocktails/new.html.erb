@@ -16,6 +16,7 @@ link_to 'Finish List', doses_url(:id)
 
       <%= simple_form_for @cocktail do |f| %>
         <%= f.input :name %>
+        <%= f.input :photo, as: :file %>
         <%= f.button :submit, class: 'btn btn-primary' %>
       <% end %>
     </div>
