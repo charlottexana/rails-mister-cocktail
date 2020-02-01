@@ -8,7 +8,10 @@
       <div class="col-4">
           <h2><%= link_to "#{cocktail.name}", cocktail_path(cocktail) %></h2>
 
-            <%= link_to "", cocktail_path(cocktail), class: 'card-link' %>
+          <%= cl_image_tag("44NJd1K3CNXfv5ZTrMKpQX12",
+      width: 400, height: 300, crop: :fill) %>
+
+            <%= link_to "#", cocktail_path(cocktail), class: 'card-link' %>
       </div>
         <% end %>
     </div>
